@@ -906,7 +906,7 @@ class SchemaHandler(JsonRestHandler, SessionEnabledHandler):
           self.response.out.write(template.render({
             'redirectUrl': get_base_url(),
             'name': 'PhotoHunt',
-            'imageUrl': '{}/images/interactivepost-icon.png'.format(
+            'imageUrl': '{}/images/thinghunt-icon.png'.format(
                 get_base_url()),
             'description': 'Join in the PhotoHunt game.'
           }))
