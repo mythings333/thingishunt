@@ -1,5 +1,5 @@
 application: thingishunt
-version: 1
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -7,6 +7,9 @@ threadsafe: true
 libraries:
 - name: jinja2
   version: latest
+  
+- name: webob
+  version: "1.2.3"
 
 handlers:
 - url: /favicon.ico
@@ -14,6 +17,7 @@ handlers:
   upload: static/favicon.ico
 
 - url: /images
+  mime_type: image/png
   static_dir: static/images
 
 - url: /js
